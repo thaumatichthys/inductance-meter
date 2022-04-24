@@ -15,11 +15,12 @@ void PeripheralFunctions::InitPWM(uint pin) {
     this->pwm_slice_num = pwm_gpio_to_slice_num(pin);
     pwm_set_wrap(this->pwm_slice_num, 499); // some arbitrary default value
     pwm_set_chan_level(this->pwm_slice_num, PWM_CHAN_A, 250);
+    pwm_set_clkdiv(this->pwm_slice_num, 40.0f);
     //pwm_set_enabled(this->pwm_slice_num, true);
 }
 
 void PeripheralFunctions::ChangePWM(uint32_t frequency) {
-    uint32_t pwm_wrap_value = SYSTEM_CLK / frequency;
+    uint32_t pwm_wrap_value = SYSTEM_CLK / (frequency * 40.0f);
     pwm_set_enabled(this->pwm_slice_num, false);
     pwm_set_wrap(this->pwm_slice_num, pwm_wrap_value - 1);
     pwm_set_chan_level(this->pwm_slice_num, PWM_CHAN_A, pwm_wrap_value / 2);

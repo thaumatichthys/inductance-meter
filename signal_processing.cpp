@@ -7,21 +7,23 @@
 LookupTables lt;
 
 float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, uint32_t sample_rate) {
+    const uint8_t number_of_dft = 2;
+
     float X_real = 0;
     float X_imag = 0;
     uint16_t frequency_bin = (frequency * (N / 2)) / (sample_rate / 2) + 1;
     
-    for (int i = 0; i < 3; i++) { // run the DFT three times and take the sum, as the DFT is very precise but the other functions might not produce a frequency that lines up fully
+    for (int i = 0; i < number_of_dft; i++) { // run the DFT three times and take the sum, as the DFT is very precise but the other functions might not produce a frequency that lines up fully
         for (int n = 0; n < N; n++) {
-            float b = (-2 * PI * n * (frequency_bin + i -1) / this->N);
+            float b = (-2 * PI * n * (frequency_bin + i - (int)((float)number_of_dft / 2)) / this->N);
             float inputAtIndex = (float)(buffer[n] - 2048) / 4096.0f;
             X_real += inputAtIndex * lt.GetCos(b);
             X_imag += inputAtIndex * lt.GetSin(b);
         }
     }
-    X_real /= 3;
-    X_imag /= 3;
-    return sqrt(X_real * X_real + X_imag * X_imag) * 3; // technically this should be divided by ((1/2) * DFT_ADC_SAMPLES), but for this purpose it does not really matter
+    X_real /= number_of_dft;
+    X_imag /= number_of_dft;
+    return sqrt(X_real * X_real + X_imag * X_imag) * number_of_dft; // technically this should be divided by ((1/2) * DFT_ADC_SAMPLES), but for this purpose it does not really matter
 }
 
 uint16_t SignalProcessing::GetIndexWithMaxVal(float buffer[], uint16_t n) {

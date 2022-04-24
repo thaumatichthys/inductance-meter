@@ -20,13 +20,14 @@ uint32_t RunFrequencySweep() {
     
     for (int i = 0; i < AC_SWEEP_POINTS; i++) {
         uint32_t freq = sp.GetScaledFreq(i); // Quadratic frequency sweep to even out the resolution across the sweep
-        uint32_t sample_rate = round(freq * 2.3f);
+        uint32_t sample_rate = round(freq * 2.5f);
         sample_rate = pf.ChangeSampleRate(sample_rate);
         pf.ChangePWM(freq);
         sleep_us(20);
         pf.SampleADC(sample_buffer, DFT_ADC_SAMPLES);
         results_buffer[i] = sp.ComputeDFTAtFreq(sample_buffer, freq, sample_rate);
     }
+    sp.ReduceNoise(results_buffer);
     return round(sp.GetScaledFreq(sp.GetIndexWithMaxVal(results_buffer, AC_SWEEP_POINTS)));
 }
 
@@ -51,21 +52,19 @@ int main() {
     gpio_init(25);
     gpio_set_dir(25, GPIO_OUT);
 
-    pf.InitADC(26, 500000);
-    pf.InitPWM(20);
+    pf.InitADC(ADC_PIN, 500000);
+    pf.InitPWM(PWM_PIN);
 
     while(1) { // the GUI needs some more work
         gpio_put(25, 1);
         sleep_ms(200);
         gpio_put(25, 0);
-
-        sp.ReduceNoise(results_buffer);
+        
         printf("Inductance: %fuH\n", (GetInductance() * 1000000));
         printf("DFT values: %f average, %f peak\n", sp.GetAverageValue(results_buffer), sp.GetPeakValue(results_buffer));
 
         /*
         RunFrequencySweep();
-        
         for (int i = 0; i < AC_SWEEP_POINTS; i++) {
             printf("%f\n", results_buffer[i]);
         }

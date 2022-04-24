@@ -11,7 +11,7 @@ float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, 
     float X_imag = 0;
     uint16_t frequency_bin = (frequency * (N / 2)) / (sample_rate / 2) + 1;
     
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 3; i++) { // run the DFT three times and take the sum, as the DFT is very precise but the other functions might not produce a frequency that lines up fully
         for (int n = 0; n < N; n++) {
             float b = (-2 * PI * n * (frequency_bin + i -1) / this->N);
             float inputAtIndex = (float)(buffer[n] - 2048) / 4096.0f;

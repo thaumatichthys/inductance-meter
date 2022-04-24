@@ -1357,9 +1357,9 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .data          0x00000000        0x0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .bss           0x00000000        0x0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
- .text          0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
- .data          0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
- .bss           0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
+ .text          0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
+ .data          0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
+ .bss           0x00000000        0x0 C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
  .data          0x00000000        0x0 c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1553,7 +1553,7 @@ LOAD c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
+ .boot2         0x10000000      0x100 C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3157,7 +3157,7 @@ LOAD CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp
 LOAD CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
 LOAD CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
 LOAD CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-LOAD C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
+LOAD C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
 LOAD c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3288,7 +3288,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000008dc       0x2c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
  .ARM.attributes
-                0x00000908       0x22 C:\Users\10052\AppData\Local\Temp\ccuEKOWd.o
+                0x00000908       0x22 C:\Users\10052\AppData\Local\Temp\cc44zpRd.o
  .ARM.attributes
                 0x0000092a       0x1e c:/progra~2/gnuarm~1/102020~1/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -3340,115 +3340,115 @@ LOAD linker stubs
  .comment       0x0000004d       0x4e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .comment       0x0000004d       0x4e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
-.debug_info     0x00000000    0x44dc9
- .debug_info    0x00000000     0xa7cb CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
- .debug_info    0x0000a7cb     0x1efe CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
- .debug_info    0x0000c6c9     0xa2bc CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
- .debug_info    0x00016985     0x1e8d CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
- .debug_info    0x00018812     0x1491 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x00019ca3      0x6bb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x0001a35e      0x1e3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x0001a541      0x58e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x0001aacf     0x3b3b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x0001e60a     0x1134 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0001f73e      0x1a4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x0001f8e2     0x2022 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00021904      0x2d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_info    0x00021bd5     0x120c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x00022de1      0xa87 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x00023868      0xf6c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x000247d4     0x1968 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x0002613c       0x26 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_info    0x00026162      0x51b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0002667d      0x4ee CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x00026b6b      0x1d8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x00026d43     0x1a5f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x000287a2       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x000287c4      0x27c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00028a40       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00028a62       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00028a84      0x2d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x00028d55     0x5587 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_info    0x0002e2dc       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x0002e2fe       0x26 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x0002e324       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x0002e346      0x2eb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x0002e631     0x5033 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_info    0x00033664       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x00033686      0x3c3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_info    0x00033a49       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00033a6b       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x00033a8d      0x2f6 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x00033d83     0x12ed CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x00035070      0x7ce CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_info    0x0003583e      0xece CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_info    0x0003670c      0x653 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_info    0x00036d5f     0x187a CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_info    0x000385d9      0xde5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_info    0x000393be     0x43b2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_info    0x0003d770      0xa40 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_info    0x0003e1b0     0x1b83 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_info    0x0003fd33      0xcbe CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_info    0x000409f1     0x2993 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_info    0x00043384      0x257 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x000435db      0xf22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x000444fd      0x5f3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .debug_info    0x00044af0      0x2d9 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.debug_info     0x00000000    0x44d66
+ .debug_info    0x00000000     0xa768 CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
+ .debug_info    0x0000a768     0x1efe CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
+ .debug_info    0x0000c666     0xa2bc CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
+ .debug_info    0x00016922     0x1e8d CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
+ .debug_info    0x000187af     0x1491 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00019c40      0x6bb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x0001a2fb      0x1e3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x0001a4de      0x58e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x0001aa6c     0x3b3b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0001e5a7     0x1134 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0001f6db      0x1a4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0001f87f     0x2022 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x000218a1      0x2d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_info    0x00021b72     0x120c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x00022d7e      0xa87 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x00023805      0xf6c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00024771     0x1968 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x000260d9       0x26 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_info    0x000260ff      0x51b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x0002661a      0x4ee CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x00026b08      0x1d8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x00026ce0     0x1a5f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x0002873f       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00028761      0x27c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x000289dd       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x000289ff       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00028a21      0x2d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x00028cf2     0x5587 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_info    0x0002e279       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x0002e29b       0x26 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x0002e2c1       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x0002e2e3      0x2eb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x0002e5ce     0x5033 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_info    0x00033601       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00033623      0x3c3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_info    0x000339e6       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00033a08       0x22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00033a2a      0x2f6 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x00033d20     0x12ed CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x0003500d      0x7ce CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_info    0x000357db      0xece CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_info    0x000366a9      0x653 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_info    0x00036cfc     0x187a CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_info    0x00038576      0xde5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_info    0x0003935b     0x43b2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_info    0x0003d70d      0xa40 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_info    0x0003e14d     0x1b83 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_info    0x0003fcd0      0xcbe CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_info    0x0004098e     0x2993 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_info    0x00043321      0x257 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x00043578      0xf22 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x0004449a      0x5f3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ .debug_info    0x00044a8d      0x2d9 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
-.debug_abbrev   0x00000000     0x7a19
- .debug_abbrev  0x00000000      0x4ec CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
- .debug_abbrev  0x000004ec      0x442 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
- .debug_abbrev  0x0000092e      0x415 CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
- .debug_abbrev  0x00000d43      0x364 CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
- .debug_abbrev  0x000010a7      0x2c4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x0000136b      0x2e9 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00001654       0xeb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x0000173f      0x21b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x0000195a      0x54d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001ea7      0x3a2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x00002249      0x116 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x0000235f      0x386 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x000026e5      0x1aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_abbrev  0x0000288f      0x297 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x00002b26      0x3aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x00002ed0      0x3a5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00003275      0x4cd CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00003742       0x14 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_abbrev  0x00003756      0x1ea CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00003940      0x1a8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00003ae8      0x109 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00003bf1      0x384 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x00003f75       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x00003f87      0x13b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x000040c2       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x000040d4       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x000040e6      0x179 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x0000425f      0x2e3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_abbrev  0x00004542       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00004554       0x14 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00004568       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x0000457a      0x18c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00004706      0x2bb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_abbrev  0x000049c1       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x000049d3      0x1cf CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_abbrev  0x00004ba2       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00004bb4       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00004bc6       0xad CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00004c73      0x4a7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x0000511a      0x2b2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_abbrev  0x000053cc      0x3f8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_abbrev  0x000057c4      0x14e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_abbrev  0x00005912      0x3d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_abbrev  0x00005ce3      0x36e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_abbrev  0x00006051      0x569 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_abbrev  0x000065ba      0x316 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_abbrev  0x000068d0      0x457 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_abbrev  0x00006d27      0x2b4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_abbrev  0x00006fdb      0x3b4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_abbrev  0x0000738f      0x163 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_abbrev  0x000074f2      0x2b6 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_abbrev  0x000077a8      0x169 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .debug_abbrev  0x00007911      0x108 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.debug_abbrev   0x00000000     0x7a0a
+ .debug_abbrev  0x00000000      0x4dd CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
+ .debug_abbrev  0x000004dd      0x442 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
+ .debug_abbrev  0x0000091f      0x415 CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
+ .debug_abbrev  0x00000d34      0x364 CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
+ .debug_abbrev  0x00001098      0x2c4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x0000135c      0x2e9 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00001645       0xeb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00001730      0x21b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x0000194b      0x54d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001e98      0x3a2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x0000223a      0x116 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x00002350      0x386 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x000026d6      0x1aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_abbrev  0x00002880      0x297 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x00002b17      0x3aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x00002ec1      0x3a5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00003266      0x4cd CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00003733       0x14 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_abbrev  0x00003747      0x1ea CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x00003931      0x1a8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00003ad9      0x109 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x00003be2      0x384 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x00003f66       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003f78      0x13b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x000040b3       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x000040c5       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x000040d7      0x179 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00004250      0x2e3 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_abbrev  0x00004533       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00004545       0x14 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x00004559       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x0000456b      0x18c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x000046f7      0x2bb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_abbrev  0x000049b2       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x000049c4      0x1cf CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_abbrev  0x00004b93       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00004ba5       0x12 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00004bb7       0xad CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00004c64      0x4a7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x0000510b      0x2b2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_abbrev  0x000053bd      0x3f8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_abbrev  0x000057b5      0x14e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_abbrev  0x00005903      0x3d1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_abbrev  0x00005cd4      0x36e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_abbrev  0x00006042      0x569 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_abbrev  0x000065ab      0x316 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_abbrev  0x000068c1      0x457 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_abbrev  0x00006d18      0x2b4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_abbrev  0x00006fcc      0x3b4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_abbrev  0x00007380      0x163 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_abbrev  0x000074e3      0x2b6 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_abbrev  0x00007799      0x169 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ .debug_abbrev  0x00007902      0x108 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
 .debug_loc      0x00000000    0x25c36
  .debug_loc     0x00000000      0x1e6 CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
@@ -3654,67 +3654,67 @@ LOAD linker stubs
  .debug_ranges  0x00004c00       0x58 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
  .debug_ranges  0x00004c58       0x28 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
-.debug_line     0x00000000    0x1be7b
- .debug_line    0x00000000      0x822 CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
- .debug_line    0x00000822      0xb16 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
- .debug_line    0x00001338      0x5dd CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
- .debug_line    0x00001915      0x438 CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
- .debug_line    0x00001d4d      0x9bf CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x0000270c      0x452 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00002b5e      0x261 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x00002dbf      0x44e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x0000320d     0x18d8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00004ae5      0xac2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x000055a7      0x208 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000057af      0xfd0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000677f      0x291 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x00006a10      0x875 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x00007285      0x7fb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00007a80      0x983 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x00008403      0xe74 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00009277       0x84 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
- .debug_line    0x000092fb      0x529 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00009824      0x3f1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00009c15      0x295 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x00009eaa     0x1200 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000b0aa      0x147 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000b1f1      0x21d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000b40e      0x2d0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b6de      0x425 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000bb03      0x32b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000be2e     0x2c50 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
- .debug_line    0x0000ea7e      0x69b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000f119       0x97 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000f1b0      0x3db CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000f58b      0x31d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000f8a8     0x27aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
- .debug_line    0x00012052      0x1c7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x00012219      0x2fc CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
- .debug_line    0x00012515       0xc1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x000125d6       0xd2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x000126a8      0x1a7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0001284f      0xcf7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x00013546      0x43b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x00013981      0x8cd CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x0001424e      0x2d5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x00014523      0xb57 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x0001507a      0x88f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x00015909     0x22f4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00017bfd      0x58c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00018189      0xecc CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x00019055      0x726 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x0001977b     0x147f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x0001abfa      0x374 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x0001af6e      0x797 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x0001b705      0x497 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
- .debug_line    0x0001bb9c      0x2df CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
+.debug_line     0x00000000    0x1be76
+ .debug_line    0x00000000      0x81d CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
+ .debug_line    0x0000081d      0xb16 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
+ .debug_line    0x00001333      0x5dd CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
+ .debug_line    0x00001910      0x438 CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
+ .debug_line    0x00001d48      0x9bf CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00002707      0x452 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00002b59      0x261 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x00002dba      0x44e CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00003208     0x18d8 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00004ae0      0xac2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x000055a2      0x208 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x000057aa      0xfd0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000677a      0x291 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00006a0b      0x875 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00007280      0x7fb CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00007a7b      0x983 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x000083fe      0xe74 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x00009272       0x84 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+ .debug_line    0x000092f6      0x529 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x0000981f      0x3f1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00009c10      0x295 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x00009ea5     0x1200 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000b0a5      0x147 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000b1ec      0x21d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000b409      0x2d0 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b6d9      0x425 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000bafe      0x32b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000be29     0x2c50 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+ .debug_line    0x0000ea79      0x69b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000f114       0x97 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000f1ab      0x3db CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000f586      0x31d CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000f8a3     0x27aa CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+ .debug_line    0x0001204d      0x1c7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x00012214      0x2fc CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+ .debug_line    0x00012510       0xc1 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x000125d1       0xd2 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x000126a3      0x1a7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0001284a      0xcf7 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x00013541      0x43b CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0001397c      0x8cd CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x00014249      0x2d5 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x0001451e      0xb57 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x00015075      0x88f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x00015904     0x22f4 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00017bf8      0x58c CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00018184      0xecc CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x00019050      0x726 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00019776     0x147f CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x0001abf5      0x374 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x0001af69      0x797 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x0001b700      0x497 CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+ .debug_line    0x0001bb97      0x2df CMakeFiles/Precision_inductance_meter.dir/C_/VSARM/sdk/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 
 .debug_str      0x00000000     0x8812
- .debug_str     0x00000000     0x15f8 CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
-                               0x1789 (size before relaxing)
- .debug_str     0x000015f8      0x775 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
+ .debug_str     0x00000000     0x15a7 CMakeFiles/Precision_inductance_meter.dir/main.cpp.obj
+                               0x1738 (size before relaxing)
+ .debug_str     0x000015a7      0x775 CMakeFiles/Precision_inductance_meter.dir/peripheral_functions.cpp.obj
                                 0xe20 (size before relaxing)
- .debug_str     0x00001d6d      0x10c CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
+ .debug_str     0x00001d1c      0x15d CMakeFiles/Precision_inductance_meter.dir/signal_processing.cpp.obj
                                0x1397 (size before relaxing)
  .debug_str     0x00001e79       0x50 CMakeFiles/Precision_inductance_meter.dir/dft_lookup_tables.cpp.obj
                                0x1155 (size before relaxing)

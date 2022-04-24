@@ -44,7 +44,7 @@ int main() {
     stdio_init_all(); // for printf
 
     /*
-        Inductance meter: Perform an AC sweep, and DFT the bin at each step.
+        Inductance meter: Perform an AC sweep, and DFT the bin at each bin.
         Then find the peak. Pretty simple in theory.
     */
 
@@ -54,9 +54,7 @@ int main() {
     pf.InitADC(26, 500000);
     pf.InitPWM(20);
 
-    LookupTables lt;
-
-    while(1) {
+    while(1) { // the GUI needs some more work
         gpio_put(25, 1);
         sleep_ms(200);
         gpio_put(25, 0);

@@ -21,7 +21,7 @@ float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, 
     }
     X_real /= 3;
     X_imag /= 3;
-    return sqrt(X_real * X_real + X_imag * X_imag) * 3;
+    return sqrt(X_real * X_real + X_imag * X_imag) * 3; // technically this should be divided by ((1/2) * DFT_ADC_SAMPLES), but for this purpose it does not really matter
 }
 
 uint16_t SignalProcessing::GetIndexWithMaxVal(float buffer[], uint16_t n) {

@@ -1,6 +1,7 @@
 #include "stdio.h" // for printf
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
+#include "hardware/watchdog.h"
 #include "math.h"
 
 #include "peripheral_functions.h"
@@ -26,6 +27,7 @@ uint32_t RunFrequencySweep() {
         sleep_us(20);
         pf.SampleADC(sample_buffer, DFT_ADC_SAMPLES);
         results_buffer[i] = sp.ComputeDFTAtFreq(sample_buffer, freq, sample_rate);
+        watchdog_update();
     }
     sp.ReduceNoise(results_buffer);
     return round(sp.GetScaledFreq(sp.GetIndexWithMaxVal(results_buffer, AC_SWEEP_POINTS)));
@@ -44,6 +46,8 @@ int main() {
     
     stdio_init_all(); // for printf
 
+    watchdog_enable(500, true); // some bug causes the pico to freeze every so often
+
     /*
         Inductance meter: Perform an AC sweep, and DFT the bin at each bin.
         Then find the peak. Pretty simple in theory.
@@ -59,6 +63,8 @@ int main() {
         gpio_put(25, 1);
         sleep_ms(200);
         gpio_put(25, 0);
+
+        watchdog_update();
         
         printf("Inductance: %fuH\n", (GetInductance() * 1000000));
         printf("DFT values: %f average, %f peak\n", sp.GetAverageValue(results_buffer), sp.GetPeakValue(results_buffer));

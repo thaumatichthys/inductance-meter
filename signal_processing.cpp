@@ -7,7 +7,7 @@
 LookupTables lt;
 
 float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, uint32_t sample_rate) {
-    const uint8_t number_of_dft = 2;
+    const uint8_t number_of_dft = 3;
 
     float X_real = 0;
     float X_imag = 0;

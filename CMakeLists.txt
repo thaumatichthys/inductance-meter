@@ -23,6 +23,7 @@ target_link_libraries(${PROJECT_NAME}
     hardware_dma
     hardware_pwm
     hardware_adc
+    hardware_watchdog
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

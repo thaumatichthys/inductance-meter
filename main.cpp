@@ -18,7 +18,6 @@ SignalProcessing sp;
 
 uint32_t RunFrequencySweep() {
     const uint32_t freq_per_point = (uint32_t)((float)(END_FREQ - START_FREQ) / AC_SWEEP_POINTS);
-    
     for (int i = 0; i < AC_SWEEP_POINTS; i++) {
         uint32_t freq = sp.GetScaledFreq(i); // Quadratic frequency sweep to even out the resolution across the sweep
         uint32_t sample_rate = round(freq * 2.5f);
@@ -68,18 +67,21 @@ int main() {
         gpio_put(25, 0);
 
         watchdog_update();
-        /*
+
+        ///*
+        // see the calculated inductance
         printf("Inductance: %fuH\n", (GetInductance() * E6));
         printf("Capacitance = %fnF\n", CAPACITANCE * E9);
         printf("DFT values: %f average, %f peak\n", sp.GetAverageValue(results_buffer), sp.GetPeakValue(results_buffer));
-        */
+        //*/
         
-        ///*
+        /*
+        // use with arduino IDE's serial plotter or something similar to see the signal strength curve
         RunFrequencySweep();
         for (int i = 0; i < AC_SWEEP_POINTS; i++) {
             printf("%f\n", results_buffer[i] * 100);
         }
         printf("%d\n", -5);
-        //*/
+        */
     }
 }

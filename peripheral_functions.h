@@ -10,7 +10,7 @@ private:
     dma_channel_config dma_cfg;
 public:
     void InitPWM(uint pin);
-    void ChangePWM(uint32_t frequency);
+    uint32_t ChangePWM(uint32_t frequency);
     void InitADC(uint pin, uint32_t sample_rate);
     void SampleADC(uint16_t buffer[], uint n);
     uint32_t ChangeSampleRate(uint32_t sample_rate);

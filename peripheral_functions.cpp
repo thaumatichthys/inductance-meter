@@ -15,16 +15,16 @@ void PeripheralFunctions::InitPWM(uint pin) {
     this->pwm_slice_num = pwm_gpio_to_slice_num(pin);
     pwm_set_wrap(this->pwm_slice_num, 499); // some arbitrary default value
     pwm_set_chan_level(this->pwm_slice_num, PWM_CHAN_A, 250);
-    pwm_set_clkdiv(this->pwm_slice_num, 40.0f);
     //pwm_set_enabled(this->pwm_slice_num, true);
 }
 
-void PeripheralFunctions::ChangePWM(uint32_t frequency) {
-    uint32_t pwm_wrap_value = SYSTEM_CLK / (frequency * 40.0f);
+uint32_t PeripheralFunctions::ChangePWM(uint32_t frequency) {
+    uint32_t pwm_wrap_value = SYSTEM_CLK / frequency;
     pwm_set_enabled(this->pwm_slice_num, false);
     pwm_set_wrap(this->pwm_slice_num, pwm_wrap_value - 1);
     pwm_set_chan_level(this->pwm_slice_num, PWM_CHAN_A, pwm_wrap_value / 2);
     pwm_set_enabled(this->pwm_slice_num, true);
+    return SYSTEM_CLK / pwm_wrap_value;
 }
 
 void PeripheralFunctions::InitADC(uint pin, uint32_t sample_rate) {
@@ -62,7 +62,6 @@ uint32_t PeripheralFunctions::ChangeSampleRate(uint32_t sample_rate) {
 
 void PeripheralFunctions::SampleADC(uint16_t buffer[], uint n) {
     adc_fifo_drain();
-    adc_run(false);
     dma_channel_configure (
         this->dma_chan,
         &this->dma_cfg,
@@ -71,6 +70,8 @@ void PeripheralFunctions::SampleADC(uint16_t buffer[], uint n) {
         n,
         true
     );
+    dma_channel_start(this->dma_chan);
     adc_run(true);
     dma_channel_wait_for_finish_blocking(this->dma_chan);
+    adc_run(false); // make sure to stop the ADC when its done, this is what caused the crashes before
 }

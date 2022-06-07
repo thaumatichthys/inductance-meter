@@ -23,12 +23,15 @@ uint32_t RunFrequencySweep() {
         uint32_t freq = sp.GetScaledFreq(i); // Quadratic frequency sweep to even out the resolution across the sweep
         uint32_t sample_rate = round(freq * 2.5f);
         sample_rate = pf.ChangeSampleRate(sample_rate);
-        pf.ChangePWM(freq);
+        freq = pf.ChangePWM(freq); // the pwm can't truly be any value, this compensates for that
         sleep_us(20);
         pf.SampleADC(sample_buffer, DFT_ADC_SAMPLES);
         results_buffer[i] = sp.ComputeDFTAtFreq(sample_buffer, freq, sample_rate);
         watchdog_update();
     }
+    sp.ReduceNoise(results_buffer);
+    sp.ReduceNoise(results_buffer);
+    sp.ReduceNoise(results_buffer);
     sp.ReduceNoise(results_buffer);
     return round(sp.GetScaledFreq(sp.GetIndexWithMaxVal(results_buffer, AC_SWEEP_POINTS)));
 }
@@ -46,7 +49,7 @@ int main() {
     
     stdio_init_all(); // for printf
 
-    watchdog_enable(500, true); // some bug causes the pico to freeze every so often
+    watchdog_enable(500, true); // auto restart in case of a crash
 
     /*
         Inductance meter: Perform an AC sweep, and DFT the bin at each bin.
@@ -59,22 +62,24 @@ int main() {
     pf.InitADC(ADC_PIN, 500000);
     pf.InitPWM(PWM_PIN);
 
-    while(1) { // the GUI needs some more work
+    while(1) { // the "GUI" needs some more work
         gpio_put(25, 1);
-        sleep_ms(200);
+        sleep_ms(20);
         gpio_put(25, 0);
 
         watchdog_update();
-        
-        printf("Inductance: %fuH\n", (GetInductance() * 1000000));
-        printf("DFT values: %f average, %f peak\n", sp.GetAverageValue(results_buffer), sp.GetPeakValue(results_buffer));
-
         /*
+        printf("Inductance: %fuH\n", (GetInductance() * E6));
+        printf("Capacitance = %fnF\n", CAPACITANCE * E9);
+        printf("DFT values: %f average, %f peak\n", sp.GetAverageValue(results_buffer), sp.GetPeakValue(results_buffer));
+        */
+        
+        ///*
         RunFrequencySweep();
         for (int i = 0; i < AC_SWEEP_POINTS; i++) {
-            printf("%f\n", results_buffer[i]);
+            printf("%f\n", results_buffer[i] * 100);
         }
         printf("%d\n", -5);
-        */
+        //*/
     }
 }

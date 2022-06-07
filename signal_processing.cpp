@@ -15,7 +15,7 @@ float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, 
     
     for (int i = 0; i < number_of_dft; i++) { // run the DFT three times and take the sum, as the DFT is very precise but the other functions might not produce a frequency that lines up fully
         for (int n = 0; n < N; n++) {
-            float b = (-2 * PI * n * (frequency_bin + i - (int)((float)number_of_dft / 2)) / this->N);
+            float b = (-2 * PI * n * (frequency_bin + i - (int)((float) number_of_dft / 2)) / this->N);
             float inputAtIndex = (float)(buffer[n] - 2048) / 4096.0f;
             X_real += inputAtIndex * lt.GetCos(b);
             X_imag += inputAtIndex * lt.GetSin(b);
@@ -23,7 +23,7 @@ float SignalProcessing::ComputeDFTAtFreq(uint16_t buffer[], uint32_t frequency, 
     }
     X_real /= number_of_dft;
     X_imag /= number_of_dft;
-    return sqrt(X_real * X_real + X_imag * X_imag) * number_of_dft; // technically this should be divided by ((1/2) * DFT_ADC_SAMPLES), but for this purpose it does not really matter
+    return sqrt(X_real * X_real + X_imag * X_imag) * number_of_dft / (DFT_ADC_SAMPLES / 2);
 }
 
 uint16_t SignalProcessing::GetIndexWithMaxVal(float buffer[], uint16_t n) {
@@ -38,12 +38,28 @@ uint16_t SignalProcessing::GetIndexWithMaxVal(float buffer[], uint16_t n) {
     return max_val_index;
 }
 
-void SignalProcessing::ReduceNoise(float buffer[]) { // basically, if average of neighbors is more than 50% greater, make it the average.
-    for (int i = 1; i < AC_SWEEP_POINTS - 1; i++) {
-        float neighbors_average = (buffer[i - 1] + buffer[i + 1]) / 2;
-        if (neighbors_average > (buffer[i] * 1.5f)) {
-            buffer[i] = neighbors_average;
+void SignalProcessing::ReduceNoise(float buffer[]) { // running average line smoothing
+    const uint8_t box_size = 10; // should be an even number
+    float original[AC_SWEEP_POINTS];
+    for (int i = 0; i < AC_SWEEP_POINTS; i++) {
+        original[i] = buffer[i];
+    }
+    for (int i = 0; i < AC_SWEEP_POINTS; i++) {
+        float accumulate = 0;
+        uint8_t effective_box_size = box_size;
+        for (int o = -1 * box_size / 2; o < box_size / 2; o++) {
+            int index = i + o;
+            float value;
+            if ((index >= AC_SWEEP_POINTS) || (index < 0)) {
+                value = 0;
+                effective_box_size--;
+            }
+            else {
+                value = original[index];
+            }
+            accumulate += value;
         }
+        buffer[i] = accumulate / effective_box_size;
     }
 }
 
